@@ -1,0 +1,24 @@
+name = "hawk_gleam"
+version = "0.1.0"
+target = "erlang"
+gleam = ">= 1.18.0"
+description = "Hawk.so error catcher for Gleam on the Erlang target"
+
+internal_modules = [
+  "capture/*",
+  "otp/*",
+  "transport",
+  "utils/*",
+]
+
+[dependencies]
+gleam_stdlib = ">= 1.0.0 and < 2.0.0"
+gleam_erlang = ">= 1.0.0 and < 2.0.0"
+gleam_otp = ">= 1.0.0 and < 2.0.0"
+gleam_json = ">= 3.1.0 and < 4.0.0"
+
+[dev_dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"
+
+[erlang]
+extra_applications = ["inets", "ssl"]
