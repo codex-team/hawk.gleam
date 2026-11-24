@@ -1,7 +1,7 @@
 name = "hawk_gleam"
 version = "0.1.0"
 target = "erlang"
-gleam = ">= 1.18.0"
+gleam = ">= 1.19.0"
 description = "Hawk.so error catcher for Gleam on the Erlang target"
 
 internal_modules = [
